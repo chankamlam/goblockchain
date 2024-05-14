@@ -8,3 +8,14 @@
 - AddBlock
 - CreateBlockChain
 - Print
+
+
+### Run
+how to build
+```
+go build
+```
+how to luanch
+```
+./goBlockchain
+```
