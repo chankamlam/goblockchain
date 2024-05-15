@@ -1,8 +1,6 @@
 package main
 
 import (
-	"bytes"
-	"crypto/sha256"
 	"fmt"
 )
 
@@ -11,13 +9,6 @@ type Block struct {
 	Data     []byte
 	PrevHash []byte
 	nonce    int64
-}
-
-func (b *Block) DeriveHash() {
-	// DeriveHash will generate a hash for the block
-	info := bytes.Join([][]byte{b.Data, b.PrevHash}, []byte{})
-	hash := sha256.Sum256(info)
-	b.Hash = hash[:]
 }
 
 func CreateBlock(data string, prevHash []byte) *Block {
