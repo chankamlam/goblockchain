@@ -9,6 +9,15 @@
 - CreateBlockChain
 - Print
 
+### Version 0.2
+###### Add ProofOfWork
+- CreateProofOfWork
+- PrepareData
+- Run
+- IntToHex
+###### Remove Block
+- DeriveHash
+
 
 ### Run
 how to build

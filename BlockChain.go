@@ -10,6 +10,10 @@ func (chain *BlockChain) AddBlock(data string) {
 	chain.Blocks = append(chain.Blocks, new)
 }
 
+func (chain *BlockChain) LastBlock() *Block {
+	return chain.Blocks[len(chain.Blocks)-1]
+}
+
 func CreateBlockChain() *BlockChain {
 	return &BlockChain{[]*Block{CreateGenesisBlock()}}
 }
