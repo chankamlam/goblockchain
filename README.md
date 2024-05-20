@@ -1,22 +1,12 @@
 ### Version 0.1
-###### Add Block
-- DeriveHash
-- CreateBlock
-- CreateGenesisBlock
-- Print
-###### Add BlockChain
-- AddBlock
-- CreateBlockChain
-- Print
+- add block and blockchain function
 
 ### Version 0.2
-###### Add ProofOfWork
-- CreateProofOfWork
-- PrepareData
-- Run
-- IntToHex
-###### Remove Block
-- DeriveHash
+- add proof of work
+
+### Version 0.3
+- add BadgerDB to store block
+- add flag module to interact command
 
 
 ### Run
